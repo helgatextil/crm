@@ -19,14 +19,10 @@ echo "Запуск синхронизации с $REMOTE_USER@$REMOTE_HOST..."
 # Создаем локальную директорию, если нет
 mkdir -p "$LOCAL_PATH"
 
-# Используем rsync для копирования файлов
-# -a: архивный режим (сохраняет права, время и т.д.)
-# -v: подробно
-# -z: сжатие
-# --delete: удалять локальные файлы, если они удалены на сервере (зеркалирование)
-# -e: указать ssh с ключом
-rsync -avz --delete -e "ssh -i $SSH_KEY -o StrictHostKeyChecking=no" \
-    "$REMOTE_USER@$REMOTE_HOST:$REMOTE_PATH" "$LOCAL_PATH"
+# Используем scp для копирования файлов (так как rsync не установлен)
+# -r: рекурсивно
+# -i: указать ключ
+scp -r -i "$SSH_KEY" -o StrictHostKeyChecking=no "$REMOTE_USER@$REMOTE_HOST:$REMOTE_PATH" "$LOCAL_PATH"
 
 if [ $? -eq 0 ]; then
     echo "Файлы успешно загружены."
