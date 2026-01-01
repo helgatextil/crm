@@ -1,6 +1,6 @@
 # CDTO.LIFE
 
-This project is a Customer Relationship Management (CRM) system built with Drupal 8.
+This project is a Customer Relationship Management (CRM) system built with Drupal 8, featuring BigBlueButton integration.
 
 ## Project Structure
 
