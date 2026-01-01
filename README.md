@@ -2,7 +2,7 @@
 
 ## Terminals
 
-- **Terminal CDTO BBB-1**: Integrated terminal interface for BigBlueButton management.
+- **Terminal CDTO BBB-1**: Integrated terminal interface for BigBlueButton management. Available at: [terminal.cdto.life](http://terminal.cdto.life)
 
 This project is a Customer Relationship Management (CRM) system built with Drupal 8, featuring BigBlueButton (BBB) Terminal integration.
 
