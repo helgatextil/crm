@@ -2,7 +2,7 @@
 
 # --- Конфигурация ---
 # Укажите имя пользователя на удаленном сервере
-REMOTE_USER="root" 
+REMOTE_USER="cdto" 
 REMOTE_HOST="terminal.cdto.life"
 # Укажите путь к файлам на сервере, которые нужно скачивать
 # Для BigBlueButton HTML5 клиента это часто: /usr/share/meteor/bundle/programs/web.browser/app/
